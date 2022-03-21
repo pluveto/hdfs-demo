@@ -6,7 +6,9 @@ public enum Action {
 
     UPLOAD,
     DOWNLOAD,
-    LIST;
+    LIST,
+    HEAD,
+    TAIL;
 
 
     public static Action fromString(String code) {

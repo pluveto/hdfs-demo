@@ -15,6 +15,9 @@ public class CliArgs {
     @Parameter(names = { "-d", "--target-dir" }, description = "Remote dir", required = false)
     private String remoteDir;
 
+    @Parameter(names = { "-l", "--length" }, description = "Length to read. default 1KB", required = false)
+    private long length = 1024;
+
     public Action getAction() {
         return action;
     }
@@ -29,5 +32,9 @@ public class CliArgs {
 
     public String getRemoteDir() {
         return remoteDir;
+    }
+
+    public long getLength() {
+        return length;
     }
 }

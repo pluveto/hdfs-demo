@@ -19,6 +19,30 @@
             "mainClass": "com.less_bug.demo.Main",
             "projectName": "hdfs-demo",
             "args": "--action upload --target /hello.txt --file hello.txt"
+        },
+        {
+            "type": "java",
+            "name": "Head file 10kb",
+            "request": "launch",
+            "mainClass": "com.less_bug.demo.Main",
+            "projectName": "hdfs-demo",
+            "args": "--action head --target /hello.txt --length 10240"
+        },
+        {
+            "type": "java",
+            "name": "Tail file 10kb",
+            "request": "launch",
+            "mainClass": "com.less_bug.demo.Main",
+            "projectName": "hdfs-demo",
+            "args": "--action tail --target /hello.txt --length 10240"
+        },
+        {
+            "type": "java",
+            "name": "Download file",
+            "request": "launch",
+            "mainClass": "com.less_bug.demo.Main",
+            "projectName": "hdfs-demo",
+            "args": "--action download --target /hello.txt --file downloaded.txt"
         }
     ]
 }
