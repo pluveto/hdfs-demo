@@ -1,0 +1,24 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "List Directory",
+            "request": "launch",
+            "mainClass": "com.less_bug.demo.Main",
+            "projectName": "hdfs-demo",
+            "args": "--action list --target-dir /"
+        },
+        {
+            "type": "java",
+            "name": "Upload file",
+            "request": "launch",
+            "mainClass": "com.less_bug.demo.Main",
+            "projectName": "hdfs-demo",
+            "args": "--action upload --target /hello.txt --file hello.txt"
+        }
+    ]
+}
